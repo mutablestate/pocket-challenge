@@ -1,0 +1,32 @@
+Pocket PlayLab Developer Challenge
+The objective of this challenge is to parse a log file and do some analysis on it. It should be an easy task for anyone with previous experience programming. You can write the script/program in any language of your choice.
+
+Requirements & output
+
+The script/program should output a small analysis of the sample log containing at least the following:
+
+Number of requests in sample
+Total time the sample covered (last timestamp - first timestamp)
+The amount of requests served pr. minute
+Total amount of data sent in megabytes
+The average amount of data sent pr. request
+The largest amount of data sent in a single request
+The output should just be simple text lines.
+
+Log format
+
+The logformat is defined as:
+
+{timestamp} {source}[{process}]: at={log_level} method={http_method} path={http_path} host={http_host} fwd={client_ip} dyno={responding_dyno} connect={connection_time}ms service={processing_time}ms status={http_status} bytes={bytes_sent}
+Example:
+
+2014-01-09T06:16:53.916977+00:00 heroku[router]: at=info method=GET path=/api/users/1538823671/count_pending_messages host=services.pocketplaylab.com fwd="208.54.86.162" dyno=web.11 connect=7ms service=9ms status=200 bytes=33
+A sample log can be downloaded at https://www.dropbox.com/s/jjd2blth0mcce2x/sample.log
+
+Delivery
+
+Please send the source file(s) to bo@pocketplaylab.com.
+
+Questions
+
+If you have any questions, you can contact us at bo@pocketplaylab.com (english only).
